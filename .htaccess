@@ -1,0 +1,6 @@
+# Activer la réécriture d'URL
+RewriteEngine On
+
+# Rediriger tout vers public/
+RewriteCond %{REQUEST_URI} !^/mediatheque/public/
+RewriteRule ^(.*)$ public/$1 [L]
